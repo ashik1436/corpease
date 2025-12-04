@@ -16,6 +16,7 @@ import PrivacyPage from './pages/PrivacyPage';
 import RefundCancelPage from './pages/RefundCancelPage';
 import ReturnPolicyPage from './pages/ReturnPolicyPage';
 import ShippingPolicyPage from './pages/ShippingPolicyPage';
+import SupportTicketPage from './pages/SupportTicketPage';
 
 // Scroll to top component to handle navigation
 const ScrollToTop: React.FC = () => {
@@ -47,6 +48,8 @@ const AppWithRouter: React.FC = () => {
                 <AppDownloadSection />
               </>
             } />
+            {/* Support Ticket page */}
+            <Route path="/support-ticket" element={<SupportTicketPage />} />
             {/* Legal pages - standalone pages */}
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />

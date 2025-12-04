@@ -8,6 +8,7 @@ const navItems: NavItem[] = [
   { name: 'About Us', id: 'about-us' },
   { name: 'Our Services', id: 'core-offerings' },
   { name: 'Contact Us', id: 'contact' },
+  { name: 'Support', id: 'support-ticket' },
 ];
 
 const Header: React.FC = () => {
@@ -16,6 +17,12 @@ const Header: React.FC = () => {
   const location = useLocation();
 
   const scrollToSection = (id: string) => {
+    if (id === 'support-ticket') {
+      navigate('/support-ticket');
+      setIsMobileMenuOpen(false);
+      return;
+    }
+
     // If we're on a legal page, navigate to home first
     if (location.pathname !== '/') {
       navigate('/');
@@ -48,7 +55,7 @@ const Header: React.FC = () => {
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logo and Title */}
-            <div 
+            <div
               className="flex items-center cursor-pointer"
               onClick={() => {
                 navigateToHome();
