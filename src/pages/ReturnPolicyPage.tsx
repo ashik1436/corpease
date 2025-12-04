@@ -4,52 +4,32 @@ const ReturnPolicyPage: React.FC = () => {
   return (
     <main className="legal-page container mx-auto px-4 py-8 max-w-4xl">
       <h1>Return Policy</h1>
-      
+
       <div className="bg-white">
-        <p>
-          At CORPEAS, we strive to ensure complete customer satisfaction with every purchase. 
-          If you are not completely satisfied with your purchase, we're here to help with our return policy.
+        <p className="mb-4">
+          We offer refund / exchange within first 3 days from the date of your purchase. If 3 days have passed
+          since your purchase, you will not be offered a return, exchange or refund of any kind. In order to become
+          eligible for a return or an exchange, (i) the purchased item should be unused and in the same condition as
+          you received it, (ii) the item must have original packaging, (iii) if the item that you purchased on a sale,
+          then the item may not be eligible for a return/exchange.
         </p>
 
-        <h2>Eligibility for Returns</h2>
-        <p>
-          Items can be returned within 7 days of delivery, provided they meet the following conditions:
-        </p>
-        <ul>
-          <li>The item is in its original packaging</li>
-          <li>The item is unused and in the same condition as received</li>
-          <li>All accessories and freebies are included</li>
-          <li>The return is accompanied by the original invoice</li>
-        </ul>
-
-        <h2>Non-Returnable Items</h2>
-        <p>
-          Certain items cannot be returned for hygiene and safety reasons:
-        </p>
-        <ul>
-          <li>Perishable food items</li>
-          <li>Personal care products</li>
-          <li>Opened consumables</li>
-          <li>Customized or personalized items</li>
-        </ul>
-
-        <h2>Return Process</h2>
-        <p>
-          To initiate a return, please contact our customer service team with your order details and reason for return. 
-          Once approved, you will receive return instructions and a return shipping label (if applicable). 
-          Items must be shipped back within 3 days of return approval.
+        <p className="mb-4">
+          Further, only such items are replaced by us
+          (based on an exchange request), if such items are found defective or damaged.
         </p>
 
-        <h2>Refunds</h2>
-        <p>
-          Upon receipt and inspection of the returned item, we will process your refund within 7-14 business days. 
-          Refunds will be issued to the original payment method. Shipping charges are non-refundable.
+        <p className="mb-4">
+          You agree that there may be a certain category of products/items that are exempted from returns or
+          refunds. Such categories of the products would be identified to you at the item of purchase.
         </p>
 
-        <h2>Damaged or Defective Items</h2>
-        <p>
-          If you receive a damaged or defective item, please report it within 24 hours of delivery. 
-          We will arrange for a replacement or refund at no additional cost.
+        <p className="mb-4">
+          For exchange
+          / return accepted request(s) (as applicable), once your returned product / item is received and inspected
+          by us, we will send you an email to notify you about receipt of the returned / exchanged product. Further.
+          If the same has been approved after the quality check at our end, your request (i.e. return/exchange) will
+          be processed in accordance with our policies.
         </p>
       </div>
     </main>

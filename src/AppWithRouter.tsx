@@ -17,6 +17,7 @@ import RefundCancelPage from './pages/RefundCancelPage';
 import ReturnPolicyPage from './pages/ReturnPolicyPage';
 import ShippingPolicyPage from './pages/ShippingPolicyPage';
 import SupportTicketPage from './pages/SupportTicketPage';
+import LegalPage from './pages/LegalPage';
 
 // Scroll to top component to handle navigation
 const ScrollToTop: React.FC = () => {
@@ -56,6 +57,7 @@ const AppWithRouter: React.FC = () => {
             <Route path="/refund-cancel" element={<RefundCancelPage />} />
             <Route path="/return" element={<ReturnPolicyPage />} />
             <Route path="/shipping" element={<ShippingPolicyPage />} />
+            <Route path="/legal" element={<LegalPage />} />
           </Routes>
         </main>
         <Footer />
